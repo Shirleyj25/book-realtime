@@ -45,7 +45,8 @@ app.post("/books", (req, res) => {
   res.json(book);
 });
 
-const PORT = 5000;
+// server.js
+const PORT = process.env.PORT || 5000;
 
 server.listen(PORT, () => {
   console.log("Server running on port 5000");
